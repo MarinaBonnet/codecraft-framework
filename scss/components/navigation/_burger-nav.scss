@@ -1,0 +1,136 @@
+.nav {
+  padding: 1rem;
+  position: relative;
+
+  &--burger {
+    background-color: lightblue;
+  }
+
+  /* Conteneur principal */
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Logo */
+  &__logo {
+    width: 50px;
+    height: auto;
+    display: block;
+  }
+
+  /* Liens desktop cachés par défaut */
+  &__links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+  }
+
+  /* Burger visible mobile */
+  &__burger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__burger-line {
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: black;
+
+    transition: 0.3s ease;
+  }
+
+  /* Menu mobile */
+  &__mobile {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 1rem;
+
+    min-width: 220px;
+
+    padding: 1rem;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transform: translateX(100%);
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+
+    &.is-open {
+      transform: translateX(0);
+
+      opacity: 1;
+
+      pointer-events: auto;
+    }
+  }
+
+  &__mobile-links {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  &__mobile-item a {
+    text-decoration: none;
+
+    color: blueviolet;
+
+    font-weight: bold;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .nav {
+    &__links {
+      display: flex;
+
+      gap: 80px;
+
+      align-items: center;
+    }
+
+    &__burger-btn {
+      display: none;
+    }
+
+    &__mobile {
+      display: none;
+    }
+  }
+}

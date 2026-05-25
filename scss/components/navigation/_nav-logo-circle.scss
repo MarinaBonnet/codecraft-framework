@@ -1,0 +1,38 @@
+.nav--logo-circle {
+  background-color: yellow;
+  border-bottom: 4px solid black;
+  padding: 2rem 2rem;
+  overflow: visible;
+  max-height: 120px;
+
+  .nav__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__links {
+    display: flex;
+    gap: 6rem; // espacement propre et symétrique
+    list-style: none;
+    padding: 0;
+    margin: 0; // surtout pas de margin ici
+  }
+
+  .nav__brand {
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .nav__logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+  }
+}

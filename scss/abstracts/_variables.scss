@@ -1,0 +1,152 @@
+// ===============================
+// VARIABLES GLOBALES
+// ===============================
+
+// Couleurs principales
+$color-primary: #1e3a8a;
+$color-secondary: #be185d;
+$color-accent: #f97316;
+
+// Couleurs neutres
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-100: #f3f4f6;
+$color-gray-300: #d1d5db;
+$color-gray-600: #4b5563;
+$color-gray-900: #111827;
+
+// Typographie
+$font-main: "Poppins", sans-serif;
+$font-size-base: 16px;
+
+// Espacements
+$space-xxs: 2px;
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+
+// Radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+
+// Ombres
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+//Gradients ORANGE
+
+$gradient-orange-1: linear-gradient(135deg, #ff7b00, #ff4d00);
+$gradient-orange-2: linear-gradient(135deg, #ff8c1a, #ff5e1a);
+$gradient-orange-3: linear-gradient(135deg, #ff9f40, #ff6a00);
+$gradient-orange-4: linear-gradient(135deg, #ffb26b, #ff7a1a);
+
+//Gradients VIOLET
+$gradient-purple-1: linear-gradient(135deg, #6a00ff, #b100ff);
+$gradient-purple-2: linear-gradient(135deg, #7a2cff, #d66bff);
+$gradient-purple-3: linear-gradient(135deg, #4b0082, #8a2be2);
+$gradient-purple-4: linear-gradient(135deg, #5e2bff, #c084ff);
+
+// Gradients BLEU
+$gradient-blue-1: linear-gradient(135deg, #007bff, #00c6ff);
+$gradient-blue-2: linear-gradient(135deg, #005eff, #00aaff);
+$gradient-blue-3: linear-gradient(135deg, #1a73e8, #4fc3f7);
+$gradient-blue-4: linear-gradient(135deg, #0d47a1, #42a5f5);
+
+//gradients VERT
+$gradient-green-1: linear-gradient(135deg, #00c853, #64dd17);
+$gradient-green-2: linear-gradient(135deg, #00e676, #66ffa6);
+$gradient-green-3: linear-gradient(135deg, #43a047, #a5d6a7);
+$gradient-green-4: linear-gradient(135deg, #2e7d32, #66bb6a);
+
+// gradients ROSE
+$gradient-pink-1: linear-gradient(135deg, #ff4da6, #ff77cc);
+$gradient-pink-2: linear-gradient(135deg, #ff5e8e, #ff99bb);
+$gradient-pink-3: linear-gradient(135deg, #ff2d55, #ff6f91);
+$gradient-pink-4: linear-gradient(135deg, #ff6f91, #ffc1e3);
+
+//gradients LUXE
+$gradient-gold-1: linear-gradient(135deg, #d4af37, #f7d774);
+$gradient-gold-2: linear-gradient(135deg, #b8860b, #ffd700);
+$gradient-black-gold-1: linear-gradient(135deg, #000000, #d4af37);
+$gradient-black-gold-2: linear-gradient(135deg, #1a1a1a, #f7d774);
+
+//gradients NEUTRES
+$gradient-grey-1: linear-gradient(135deg, #e0e0e0, #bdbdbd);
+$gradient-grey-2: linear-gradient(135deg, #f5f5f5, #d6d6d6);
+$gradient-silver-1: linear-gradient(135deg, #c0c0c0, #f8f8f8);
+$gradient-silver-2: linear-gradient(135deg, #9e9e9e, #e0e0e0);
+
+//gradient MULTICOLOR
+$gradient-rainbow-1: linear-gradient(135deg, #ff0080, #ff8c00, #40e0d0);
+$gradient-rainbow-2: linear-gradient(135deg, #7928ca, #ff0080, #ff4d4d);
+$gradient-rainbow-3: linear-gradient(135deg, #00c6ff, #0072ff, #7928ca);
+
+//Gradients pastels
+$gradient-pastel-1: linear-gradient(135deg, #ffd1dc, #ffe6f2);
+$gradient-pastel-2: linear-gradient(135deg, #d4f1f4, #f0f9ff);
+$gradient-pastel-3: linear-gradient(135deg, #e3ffe7, #d9e7ff);
+$gradient-pastel-4: linear-gradient(135deg, #fff1d6, #ffe4c4);
+$gradient-pastel-5: linear-gradient(135deg, #fce1ff, #e8d9ff);
+
+//Gradients SOMBRE
+$gradient-dark-1: linear-gradient(135deg, #0f0f0f, #2b2b2b);
+$gradient-dark-2: linear-gradient(135deg, #1a1a1a, #3d3d3d);
+$gradient-dark-3: linear-gradient(135deg, #121212, #292929);
+$gradient-dark-4: linear-gradient(135deg, #1f1f1f, #4a4a4a);
+$gradient-dark-5: linear-gradient(135deg, #000000, #434343);
+
+//Gradients background XXL
+$gradient-bg-1: linear-gradient(135deg, #6a11cb, #2575fc);
+$gradient-bg-2: linear-gradient(135deg, #ff512f, #dd2476);
+$gradient-bg-3: linear-gradient(135deg, #00c6ff, #0072ff);
+$gradient-bg-4: linear-gradient(135deg, #f7971e, #ffd200);
+$gradient-bg-5: linear-gradient(135deg, #11998e, #38ef7d);
+$gradient-bg-6: linear-gradient(135deg, #fc5c7d, #6a82fb);
+$gradient-bg-7: linear-gradient(135deg, #141e30, #243b55);
+
+// Gradients Hover
+$gradient-hover-1: linear-gradient(135deg, #ff8c1a, #ff5e1a);
+$gradient-hover-2: linear-gradient(135deg, #7a2cff, #d66bff);
+$gradient-hover-3: linear-gradient(135deg, #005eff, #00aaff);
+$gradient-hover-4: linear-gradient(135deg, #00e676, #66ffa6);
+$gradient-hover-5: linear-gradient(135deg, #ff5e8e, #ff99bb);
+$gradient-hover-6: linear-gradient(135deg, #b8860b, #ffd700);
+
+//Gradients violet or
+$gradient-violet-gold-1: linear-gradient(135deg, #6a00ff, #d4af37);
+$gradient-violet-gold-2: linear-gradient(135deg, #8a2be2, #f7d774);
+$gradient-violet-gold-3: linear-gradient(135deg, #5e2bff, #c084fc);
+$gradient-violet-gold-4: linear-gradient(135deg, #3d1a78, #d4af37);
+$gradient-violet-gold-5: linear-gradient(135deg, #7b2cbf, #ffdd55);
+
+//Gradients multi
+$gradient-multi-1: linear-gradient(135deg, #ff0080, #ff8c00, #40e0d0);
+$gradient-multi-2: linear-gradient(135deg, #7928ca, #ff0080, #ff4d4d);
+$gradient-multi-3: linear-gradient(135deg, #00c6ff, #0072ff, #7928ca);
+$gradient-multi-4: linear-gradient(135deg, #ff6f91, #ff9671, #ffc75f);
+
+//Gradients transparents (overlays/cards/glassroom)
+$gradient-transparent-1: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0.1),
+  rgba(255, 255, 255, 0.4)
+);
+$gradient-transparent-2: linear-gradient(
+  135deg,
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.6)
+);
+$gradient-transparent-3: linear-gradient(
+  135deg,
+  rgba(106, 0, 255, 0.2),
+  rgba(106, 0, 255, 0.5)
+);
+$gradient-transparent-4: linear-gradient(
+  135deg,
+  rgba(255, 125, 0, 0.2),
+  rgba(255, 77, 0, 0.5)
+);

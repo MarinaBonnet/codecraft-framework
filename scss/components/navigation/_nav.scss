@@ -1,0 +1,16 @@
+.nav {
+  padding: 1rem;
+  position: relative;
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

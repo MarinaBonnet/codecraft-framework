@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="module" src="/js/main.js" defer></script>
+    <title>Navbar</title>
+</head>
+
+<body>
+    <section class="demo">
+        <h2>Nav Classic + Burger</h2>
+        <nav class="nav nav--burger" aria-label="navigation principale">
+            <div class="nav__container">
+                <a href="/" class="nav__brand">
+                    <img src="/assets/image/logo.png" alt="Nom du site" class="nav__logo">
+                </a>
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="">Accueil</a></li>
+                    <li class="nav__item"><a href="">Services</a></li>
+                    <li class="nav__item"><a href="">Contacts</a></li>
+                </ul>
+                <button class="nav__burger-btn" aria-label="Ouvrir le menu" aria-expanded="false"
+                    aria-controls="nav-mobile">
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                </button>
+                <div class="nav__mobile" aria-hidden="true">
+                    <ul class="nav__mobile-links">
+                        <li class="nav__mobile-item"><a href="">Accueil</a></li>
+                        <li class="nav__mobile-item"><a href="">Services</a></li>
+                        <li class="nav__mobile-item"><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="demo">
+        <h2>Nav logo Center</h2>
+        <!-- Navbar avec logo au centre et liens de chaque coté -->
+        <nav class="nav nav--logo-center" aria-label="navigation principale">
+            <div class="nav__container">
+
+
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="">Accueil</a></li>
+                    <li class="nav__item"><a href="">Services</a></li>
+                </ul>
+
+                <img src="/assets/image/logo.png" alt="nom du site" class="nav__logo">
+
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="">À propos</a></li>
+                    <li class="nav__item"><a href="">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="demo">
+        <h2>Nav Logo Center rond #2</h2>
+        <nav class="nav nav--logo-circle" aria-label="Navigation principale">
+            <div class="nav__container">
+                <ul class="nav__links">
+                    <li><a href="#menu" class="nav-item">Menus</a></li>
+                    <li><a href="#AproposDe" class="nav-item">À propos</a></li>
+                </ul>
+                <a href="#index.html" class="nav__brand" aria-current="page"><img class="nav__logo"
+                        src="/assets/image/logo.png" alt="nom du restaurant" /></a>
+                <ul class="nav__links">
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                    <li><a href="#reservation" class="nav-item">Réservation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <div></div>
+    <section class="demo">
+        <h2>Nav Cta</h2>
+        <nav class="nav nav--cta-burger" aria-label="navigation principale">
+            <div class="nav__container">
+                <a href="/" class="nav__brand">
+                    <img src="/assets/image/logo.png" alt="Nom du site" class="nav__logo">
+                </a>
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="">Accueil</a></li>
+                    <li class="nav__item"><a href="">Services</a></li>
+                    <li class="nav__item"><a href="">Tarifs</a></li>
+                </ul>
+                <a href="#contact" class="nav__btn">Contactez-nous</a>
+                <button class="nav__burger-btn" aria-label="Ouvrir le menu" aria-expanded="false"
+                    aria-controls="nav-mobile">
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                </button>
+                <div class="nav__mobile" aria-hidden="true">
+                    <ul class="nav__mobile-links">
+                        <li class="nav__mobile-item"><a href="">Accueil</a></li>
+                        <li class="nav__mobile-item"><a href="">Services</a></li>
+                        <li class="nav__mobile-item"><a href="">Tarifs</a></li>
+                        <li class="nav__mobile-item"><a href="">Contactez-nous</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <h2>Nav Recherche</h2>
+
+        <nav class="nav nav--search" aria-label="navigation principale">
+            <div class="nav__container">
+
+                <!-- Logo -->
+                <a href="/" class="nav__brand">
+                    <img src="/assets/image/logo.png" alt="Nom du site" class="nav__logo">
+                </a>
+
+                <!-- Liens desktop -->
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="">Accueil</a></li>
+                    <li class="nav__item"><a href="">Services</a></li>
+                    <li class="nav__item"><a href="">Tarifs</a></li>
+                </ul>
+
+                <!-- Barre de recherche desktop -->
+                <div class="nav__search">
+                    <input type="text" placeholder="Rechercher…" class="nav__search-input">
+                </div>
+
+                <!-- CTA desktop -->
+                <a href="#contact" class="nav__btn">Contact</a>
+
+                <!-- Burger mobile -->
+                <button class="nav__burger-btn" aria-label="Ouvrir le menu">
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                </button>
+
+                <!-- Menu mobile -->
+                <div class="nav__mobile">
+                    <ul class="nav__mobile-links">
+                        <li class="nav__mobile-item"><a href="">Accueil</a></li>
+                        <li class="nav__mobile-item"><a href="">Services</a></li>
+                        <li class="nav__mobile-item"><a href="">Tarifs</a></li>
+                        <li class="nav__mobile-item"><a href="">Contact</a></li>
+
+                        <!-- Recherche mobile -->
+                        <div class="nav__mobile-search">
+                            <input type="text" placeholder="Rechercher…" class="nav__mobile-search-input">
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+</body>
+
+</html>

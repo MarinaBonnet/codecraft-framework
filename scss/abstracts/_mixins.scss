@@ -1,0 +1,49 @@
+// ===============================
+// MIXINS GLOBAUX
+// ===============================
+
+// Flex rapide
+@mixin flex($align: center, $justify: center, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+// Responsive font
+@mixin fluid-text($max, $min) {
+  font-size: clamp($min, 2vw, $max);
+}
+
+// Container
+@mixin container($max-width: 1200px) {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-md;
+}
+
+// Bouton
+@mixin button($bg, $color: $color-white) {
+  background: $bg;
+  color: $color;
+  padding: $space-sm $space-md;
+  border-radius: $radius-md;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}
+
+// Thème de composant
+@mixin theme($bg, $text) {
+  background-color: $bg;
+  color: $text;
+
+  a {
+    color: $text;
+  }
+}
