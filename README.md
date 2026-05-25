@@ -1,4 +1,5 @@
 🧱 CodeCraft Framework — Full‑Stack Open‑Source Toolkit
+
 CodeCraft Framework est un framework open‑source complet regroupant des outils frontend, backend JavaScript, backend PHP, sécurité, SQL, et des composants UI/UX réutilisables.
 Il est conçu pour accélérer la création de projets web modernes, structurés, sécurisés et cohérents.
 
