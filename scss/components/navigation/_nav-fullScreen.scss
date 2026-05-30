@@ -1,75 +1,65 @@
-/* ======================================
-   NAV FULLSCREEN OVERLAY
-====================================== */
-
 .nav--fullscreen {
-  background: #ee0a97;
+  background: #ee24a0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 
   .nav__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 1rem 1.5rem;
+    padding: 1.25rem 2rem;
   }
 
-  /* Logo */
-
   .nav__logo {
-    width: 50px;
+    width: 60px;
     height: auto;
-    display: block;
   }
 
   /* Burger */
 
   .nav__burger-btn {
     position: relative;
-    z-index: 101;
+    z-index: 1001;
 
     display: flex;
     flex-direction: column;
     gap: 6px;
 
-    background: none;
+    background: transparent;
     border: none;
 
     cursor: pointer;
   }
 
   .nav__burger-line {
-    width: 30px;
-    height: 3px;
+    width: 32px;
+    height: 2px;
 
-    background: white;
+    background: #111;
 
-    border-radius: 4px;
-
-    transition:
-      transform 0.3s ease,
-      opacity 0.3s ease;
+    transition: all 0.3s ease;
   }
 
-  /* Overlay */
+  /* Overlay premium */
 
   .nav__overlay {
     position: fixed;
     inset: 0;
 
-    z-index: 100;
-
-    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    background: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(12px);
+
     opacity: 0;
     visibility: hidden;
 
-    transition:
-      opacity 0.3s ease,
-      visibility 0.3s ease;
+    transition: all 0.4s ease;
   }
 
   .nav__overlay.is-open {
@@ -77,18 +67,15 @@
     visibility: visible;
   }
 
-  /* Liens */
-
   .nav__links {
     display: flex;
     flex-direction: column;
-
     gap: 2rem;
+
+    list-style: none;
 
     padding: 0;
     margin: 0;
-
-    list-style: none;
 
     text-align: center;
   }
@@ -98,25 +85,23 @@
 
     text-decoration: none;
 
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 4rem);
 
     font-weight: 700;
 
-    text-transform: uppercase;
-
-    letter-spacing: 2px;
+    letter-spacing: 0.08em;
 
     transition: opacity 0.3s ease;
   }
 
   .nav__links a:hover {
-    opacity: 0.7;
+    opacity: 0.6;
   }
 
   /* Burger -> Croix */
 
   .nav__burger-btn.is-open .nav__burger-line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
 
   .nav__burger-btn.is-open .nav__burger-line:nth-child(2) {
@@ -124,41 +109,45 @@
   }
 
   .nav__burger-btn.is-open .nav__burger-line:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
-
-/* ======================================
-   DESKTOP
-====================================== */
 
 @media (min-width: 768px) {
   .nav--fullscreen {
     .nav__container {
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+
+      align-items: center;
+    }
+
+    .nav__brand {
+      justify-self: start;
     }
 
     .nav__overlay {
       position: static;
 
-      display: block;
-
       opacity: 1;
       visibility: visible;
 
       background: transparent;
+
+      backdrop-filter: none;
+
+      justify-self: center;
     }
 
     .nav__links {
       flex-direction: row;
 
-      gap: 2rem;
+      gap: 3rem;
     }
 
     .nav__links a {
       font-size: 1rem;
-
-      color: white;
+      font-weight: 600;
     }
 
     .nav__burger-btn {
