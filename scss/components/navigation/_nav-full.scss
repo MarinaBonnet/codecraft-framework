@@ -1,0 +1,186 @@
+@use "../../abstracts/variables" as *;
+
+/* ==========================
+   NAV FULLSCREEN MOBILE FIRST
+========================== */
+
+.nav--full {
+  background-color: pink;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid red;
+
+  /* Conteneur principal */
+
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Logo */
+
+  .nav__logo {
+    width: 50px;
+    height: auto;
+    display: block;
+  }
+
+  /* Desktop caché */
+
+  .nav__links,
+  .nav__btn {
+    display: none;
+  }
+
+  /* ==========================
+     BURGER
+  ========================== */
+
+  .nav__burger-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .nav__burger-line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 4px;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  /* ==========================
+     FULLSCREEN
+  ========================== */
+
+  .nav__mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform 0.3s ease,
+      opacity 0.4s ease;
+  }
+
+  .nav__mobile.is-open {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Liens */
+
+  .nav__mobile-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav__mobile-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+  }
+
+  .nav__mobile-item a:hover {
+    opacity: 0.7;
+  }
+
+  /* ==========================
+     BURGER → CROIX
+  ========================== */
+
+  .nav__burger-btn.is-open .nav__burger-line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .nav__burger-btn.is-open .nav__burger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__burger-btn.is-open .nav__burger-line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+}
+
+/* ==========================
+   DESKTOP
+========================== */
+
+@media (min-width: 768px) {
+  .nav--full {
+    .nav__links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav__item a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
+    .nav__btn {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      color: white;
+
+      /* GRADIENT */
+      background: linear-gradient(135deg, #6a00ff, #b100ff);
+
+      /* Effets */
+      transition: 0.25s ease;
+      box-shadow: 0 4px 12px rgba(247, 0, 255, 0.25);
+
+      &:hover {
+        background: linear-gradient(135deg, #8a00ff, #d100ff);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(138, 0, 255, 0.35);
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 8px rgba(138, 0, 255, 0.2);
+      }
+    }
+
+    .nav__burger-btn {
+      display: none;
+    }
+
+    .nav__mobile {
+      display: none;
+    }
+  }
+}

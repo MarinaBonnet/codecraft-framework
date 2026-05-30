@@ -1,63 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <!-- JS principal -->
     <script type="module" src="js/main.js" defer></script>
-    <title>Ma UI Library</title>
+
+    <title>Code&Craft - Framework</title>
 </head>
 
-<body>
-    <header>
-        <h1>Ma UI Library</h1>
+<body class="hub">
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+    <header class="hub__header">
+
+        <h1 class="hub__title">
+            Code&Craft - Framework
+        </h1>
+
+        <p class="hub__subtitle">
+            Bibliothèque de composants et ressources pour développeurs
+        </p>
+
+        <div class="hub__actions">
+            <a href="#components" class="hub__btn">
+                Explorer les composants
+            </a>
+
+            <a href="#docs" class="hub__btn hub__btn--secondary">
+                Voir la documentation
+            </a>
+        </div>
+
     </header>
 
-    <nav>
+    <!-- ==================================================
+         NAVIGATION PRINCIPALE
+    =================================================== -->
+    <nav class="hub__nav">
 
-        <ul>
+        <ul class="hub__nav-list">
 
-            <li>
-                <a href="pages/navigation.html">
-                    Navigation
+            <li class="hub__nav-item">
+                <a href="#components" class="hub__nav-link">
+                    UI Components
                 </a>
             </li>
 
-            <li>
-                <a href="pages/footer.html">
-                    Footer
+            <li class="hub__nav-item">
+                <a href="#docs" class="hub__nav-link">
+                    Langages
                 </a>
             </li>
 
-            <li>
-                <a href="pages/buttons.html">
-                    Buttons
+            <li class="hub__nav-item">
+                <a href="#frameworks" class="hub__nav-link">
+                    Frameworks
                 </a>
             </li>
 
-            <li>
-                <a href="pages/cards.html">
-                    Cards
+            <li class="hub__nav-item">
+                <a href="#tools" class="hub__nav-link">
+                    Outils
+                </a>
+            </li>
+            <li class="hub__nav-item">
+                <a href="#snippets" class="hub__nav-link">
+                    Snippets
                 </a>
             </li>
 
-            <li>
-                <a href="pages/forms.html">
-                    Forms
-                </a>
-            </li>
-
-            <li>
-                <a href="pages/modals.html">
-                    Modals
+            <li class="hub__nav-item">
+                <a href="#templates" class="hub__nav-link">
+                    Templates
                 </a>
             </li>
 
         </ul>
 
     </nav>
+
+    <main>
+
+        <!-- ==================================================
+             STATISTIQUES
+        =================================================== -->
+        <section class="hub__stats">
+
+            <article class="hub__stat-card">
+                <h3>25+</h3>
+                <p>Composants UI</p>
+            </article>
+
+            <article class="hub__stat-card">
+                <h3>10+</h3>
+                <p>Exemples PHP</p>
+            </article>
+
+            <article class="hub__stat-card">
+                <h3>5+</h3>
+                <p>Frameworks</p>
+            </article>
+
+        </section>
+
+        <!-- ==================================================
+             COMPOSANTS UI
+        =================================================== -->
+        <section id="components" class="hub__section">
+
+            <h2>UI Components</h2>
+
+            <div class="hub__grid">
+
+                <article class="hub__card">
+                    <h3>Navigation</h3>
+                    <p>Menus desktop, mobile et fullscreen.</p>
+                    <a href="navigation.html">Explorer</a>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Headers</h3>
+                    <p>Headers modernes et responsives.</p>
+                    <a href="headers.html">Explorer</a>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Heroes</h3>
+                    <p>Sections d'accueil premium.</p>
+                    <a href="heroes.html">Explorer</a>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Cards</h3>
+                    <p>Cartes produits et services.</p>
+                    <a href="cards.html">Explorer</a>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Formulaires</h3>
+                    <p>Login, contact, inscription.</p>
+                    <a href="forms.html">Explorer</a>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Footers</h3>
+                    <p>Pieds de page complets.</p>
+                    <a href="footers.html">Explorer</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             DOCUMENTATION
+        =================================================== -->
+        <section id="docs" class="hub__section">
+
+            <h2>Langages</h2>
+
+            <div class="hub__grid">
+
+                <article class="hub__card">
+                    <h3>HTML</h3>
+                    <p>Balises, structure et accessibilité.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>CSS</h3>
+                    <p>Flexbox, Grid et animations.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Sass</h3>
+                    <p>Variables, mixins et architecture.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>JavaScript</h3>
+                    <p>DOM, modules et composants.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>PHP</h3>
+                    <p>PDO, sessions et sécurité.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             FRAMEWORKS
+        =================================================== -->
+        <section id="frameworks" class="hub__section">
+
+            <h2>Frameworks</h2>
+
+            <div class="hub__grid">
+
+                <article class="hub__card">
+                    <h3>Symfony</h3>
+                    <p>Routing, contrôleurs et Doctrine.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Laravel</h3>
+                    <p>Blade, Eloquent et Artisan.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Node.js</h3>
+                    <p>Backend JavaScript.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>C# / .NET</h3>
+                    <p>Applications et APIs.</p>
+                </article>
+                <article class="hub__card">
+                    <h3>Unity</h3>
+                    <p></p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             OUTILS
+        =================================================== -->
+        <section id="tools" class="hub__section">
+
+            <h2>Outils</h2>
+
+            <div class="hub__grid">
+
+                <article class="hub__card">
+                    <h3>Git</h3>
+                    <p>Gestion de versions.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Docker</h3>
+                    <p>Conteneurisation des projets.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Linux</h3>
+                    <p>Commandes et administration.</p>
+                </article>
+                <article class="hub__card">
+                    <h3>VS Code</h3>
+                    <p></p>
+                </article>
+
+
+            </div>
+
+        </section>
+        <!-- ==================================================
+            SNIPPETS
+        =================================================== -->
+        <section id="snippets" class="hub__section">
+
+            <h2>Snippets</h2>
+
+            <p class="hub__section-description">
+                Exemples de code prêts à l'emploi pour accélérer le développement.
+            </p>
+
+            <div class="hub__grid">
+
+                <article class="hub__card">
+                    <h3>Connexion PDO</h3>
+                    <p>Connexion sécurisée à une base de données MySQL.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Authentification</h3>
+                    <p>Connexion utilisateur avec session PHP.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Upload de fichiers</h3>
+                    <p>Gestion sécurisée des images et documents.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Pagination</h3>
+                    <p>Afficher les résultats par pages.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>API Fetch</h3>
+                    <p>Consommer une API avec JavaScript.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>CRUD Complet</h3>
+                    <p>Créer, lire, modifier et supprimer des données.</p>
+                </article>
+
+            </div>
+
+        </section>
+        <!-- ==================================================
+            TEMPLATES
+        =================================================== -->
+        <section id="templates" class="hub__section">
+
+            <h2>Templates</h2>
+
+            <p class="hub__section-description">
+                Modèles complets pour démarrer rapidement un projet.
+            </p>
+
+            <div class="hub__grid">
+
+                <article class="hub__card">
+                    <h3>Portfolio Développeur</h3>
+                    <p>Template moderne pour présenter ses projets.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Agence Web</h3>
+                    <p>Site vitrine professionnel pour agence digitale.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Restaurant</h3>
+                    <p>Présentation, menu et réservation.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>E-commerce</h3>
+                    <p>Boutique en ligne complète.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Landing Page SaaS</h3>
+                    <p>Page marketing pour application web.</p>
+                </article>
+
+                <article class="hub__card">
+                    <h3>Blog</h3>
+                    <p>Structure optimisée pour publier du contenu.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             DERNIERS AJOUTS
+        =================================================== -->
+        <section class="hub__section">
+
+            <h2>Derniers ajouts</h2>
+
+            <ul class="hub__updates">
+
+                <li>Navigation Fullscreen Overlay</li>
+
+                <li>Navigation Logo Center</li>
+
+                <li>Card Pricing Premium</li>
+
+                <li>Formulaire de contact</li>
+
+            </ul>
+
+        </section>
+        <!-- ==================================================
+             ROADMAP
+        =================================================== -->
+        <section class="hub__section">
+
+            <h2>À venir</h2>
+
+            <ul class="hub__updates">
+                <li>Composants Vue.js</li>
+                <li>Composants React</li>
+                <li>Documentation Symfony</li>
+                <li>Documentation Laravel</li>
+                <li>Templates Dashboard Admin</li>
+                <li>Exemples Docker</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+    <footer class="hub__footer">
+
+        <p>
+            © 2026 Code&Craft - Framework
+        </p>
+
+    </footer>
 
 </body>
 

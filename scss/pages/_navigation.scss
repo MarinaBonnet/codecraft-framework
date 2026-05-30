@@ -1,0 +1,247 @@
+/* ======================================
+   HUB - CODE & CRAFT
+====================================== */
+
+body.hub {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* ======================================
+   HEADER
+====================================== */
+
+.hub__header {
+  padding: 5rem 2rem;
+  text-align: center;
+
+  background: linear-gradient(135deg, #ee0a97, #8b5cf6);
+
+  color: white;
+}
+
+.hub__title {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.hub__subtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hub__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ======================================
+   BOUTONS
+====================================== */
+
+.hub__btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  background: white;
+  color: #111827;
+
+  transition: 0.3s ease;
+}
+
+.hub__btn:hover {
+  transform: translateY(-2px);
+}
+
+.hub__btn--secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ======================================
+   NAVIGATION
+====================================== */
+
+.hub__nav {
+  background: white;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.hub__nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  margin: 0;
+  padding: 1rem;
+
+  list-style: none;
+}
+
+.hub__nav-link {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 600;
+}
+
+.hub__nav-link:hover {
+  color: #ee0a97;
+}
+
+/* ======================================
+   STATISTIQUES
+====================================== */
+
+.hub__stats {
+  max-width: 1200px;
+  margin: 4rem auto;
+
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 1.5rem;
+}
+
+.hub__stat-card {
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hub__stat-card h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ee0a97;
+}
+
+/* ======================================
+   SECTIONS
+====================================== */
+
+.hub__section {
+  max-width: 1200px;
+
+  margin: 5rem auto;
+
+  padding: 0 2rem;
+}
+
+.hub__section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.hub__section-description {
+  margin-bottom: 2rem;
+  color: #64748b;
+}
+
+/* ======================================
+   GRILLE
+====================================== */
+
+.hub__grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 1.5rem;
+}
+
+/* ======================================
+   CARTES
+====================================== */
+
+.hub__card {
+  background: white;
+
+  padding: 1.5rem;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s ease;
+}
+
+.hub__card:hover {
+  transform: translateY(-4px);
+}
+
+.hub__card h3 {
+  margin-top: 0;
+}
+
+.hub__card a {
+  color: #ee0a97;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ======================================
+   UPDATES
+====================================== */
+
+.hub__updates {
+  background: white;
+
+  padding: 2rem;
+
+  border-radius: 16px;
+
+  list-style: none;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hub__updates li {
+  padding: 0.75rem 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.hub__updates li:last-child {
+  border-bottom: none;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.hub__footer {
+  text-align: center;
+
+  padding: 3rem 2rem;
+
+  margin-top: 5rem;
+
+  background: #111827;
+
+  color: white;
+}
